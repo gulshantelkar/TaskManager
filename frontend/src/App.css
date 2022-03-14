@@ -1,0 +1,63 @@
+:root {
+  --blue: #003979;
+  --shadow-blue: #001959;
+  --light-blue: #e8f3fe;
+  --red: #d60707;
+  --shadow-red: #b60000;
+}
+body {
+  background-color: var(--light-blue);
+  font-family: Roboto;
+}
+center > div {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 20px;
+  margin: 40px 100px;
+  color: var(--blue);
+}
+h1 {
+  color: var(--blue);
+  text-align: center;
+  margin-bottom: 30px;
+}
+#interface {
+  width: 40vw;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+}
+.task {
+  border-radius: 5px;
+  width: 40vw;
+  display: flex;
+  position: relative;
+}
+.completed {
+  background-color: green;
+}
+.task > button {
+  position: absolute;
+  top: 13px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.completed-button {
+  right: 90px;
+  background-color: var(--blue);
+}
+.completed-button:hover {
+  background-color: var(--shadow-blue);
+}
+.delete-button {
+  right: 0;
+  background-color: var(--red);
+}
+.delete-button:hover {
+  background-color: var(--shadow-red);
+}
